@@ -40,12 +40,14 @@ h1 {
     text-decoration: none;
     letter-spacing: 3px;
     text-transform: uppercase;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
+    -webkit-transition: text-shadow 0.3s;
+    transition: text-shadow 0.3s; }
     .nav__item:hover {
-      color: #ff9c8e; }
+      text-shadow: 2px 2px #005fb3; }
     .nav__item-active {
-      position: relative; }
+      position: relative;
+      -webkit-transition: width 2s;
+      transition: width 2s; }
       .nav__item-active::after {
         position: absolute;
         content: "";
@@ -214,11 +216,15 @@ h1 {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   -webkit-transition: color 0.3s;
-  transition: color 0.3s; }
+  transition: color 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s; }
   .button:hover {
-    background-color: #fff; }
+    background-color: #008aff; }
   .button:hover {
-    color: #ff9c8e; }
+    color: #fff; }
+  .button:hover {
+    border: 2px solid #ff9c8e; }
   .button:focus {
     outline: none;
     border: 1px solid white; }
