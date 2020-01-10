@@ -57,6 +57,9 @@ h1 {
         width: 100%;
         border-radius: 4px;
         background: #ff9c8e; }
+    .nav__item:focus {
+      outline: none;
+      text-shadow: 2px 2px #005fb3; }
     .nav__item:active {
       position: relative; }
       .nav__item:active::after {
@@ -85,6 +88,9 @@ h1 {
     transition: color 0.3s; }
     .nav__link:hover {
       color: #ff9c8e; }
+    .nav__link:focus {
+      outline: none;
+      text-shadow: 2px 2px #005fb3; }
 
 .info-section {
   display: grid;
