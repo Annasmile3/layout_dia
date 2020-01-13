@@ -217,8 +217,8 @@ h1 {
   color: #fff;
   border: none;
   cursor: pointer;
-  -webkit-transition: border 0.8s, background-color 0.5s;
-  transition: border 0.8s, background-color 0.5s; }
+  -webkit-transition: border 0.2s, background-color 0.4s;
+  transition: border 0.2s, background-color 0.4s; }
   .button:hover {
     background-color: #008aff;
     border: 2px solid #ff9c8e; }
@@ -245,7 +245,7 @@ h1 {
 
 .aboutus {
   background-color: #fff;
-  padding: 128px 17.3% 148px; }
+  padding: 128px 17% 148px; }
   .aboutus__heading {
     max-width: 562px;
     height: 78px;
@@ -288,14 +288,13 @@ h1 {
     line-height: 150%; }
 
 .services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 14.2%;
-  margin-bottom: 251px; }
+  padding: 0 14%;
+  margin-bottom: 188px; }
   .services__description {
     margin-top: 230px;
     width: 362px;
@@ -322,11 +321,13 @@ h1 {
     margin-bottom: 30px; }
   .services__cards-left {
     -webkit-transform: translateY(280px);
-            transform: translateY(280px); }
+            transform: translateY(280px);
+    justify-self: right;
+    margin-right: 30px; }
   .services__cards-right {
     -webkit-transform: translateY(148px);
             transform: translateY(148px);
-    margin-left: 3.5%; }
+    justify-self: right; }
 
 .box {
   position: relative;
