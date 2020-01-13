@@ -261,7 +261,13 @@ h1 {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; }
+
+@media screen and (max-width: 1280px) {
+  .aboutus {
+    padding: 118px 10% 128px; } }
 
 .card {
   width: 264px;
@@ -288,13 +294,15 @@ h1 {
     line-height: 150%; }
 
 .services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 14%;
-  margin-bottom: 188px; }
+  padding: 0 227px;
+  max-width: 1600px;
+  margin: 0 auto 188px; }
   .services__description {
     margin-top: 230px;
     width: 362px;
@@ -315,22 +323,30 @@ h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 150%; }
+  .services__cards {
+    display: grid;
+    margin-top: 148px;
+    gap: 30px;
+    grid-template-areas: ". yellow"  "blue yellow" "blue red" "green red" "green ."; }
   .services__cards .box:first-child {
-    margin-bottom: 30px; }
+    grid-area: blue; }
+  .services__cards .box:nth-child(2) {
+    grid-area: yellow; }
   .services__cards .box:nth-child(3) {
-    margin-bottom: 30px; }
-  .services__cards-left {
-    -webkit-transform: translateY(280px);
-            transform: translateY(280px);
-    justify-self: right;
-    margin-right: 30px; }
-  .services__cards-right {
-    -webkit-transform: translateY(148px);
-            transform: translateY(148px);
-    justify-self: right; }
+    grid-area: green; }
+  .services__cards .box:nth-child(4) {
+    grid-area: red; }
+
+@media screen and (max-width: 1280px) {
+  .services {
+    padding: 0 10%; }
+    .services__description {
+      width: 280px; }
+    .services__heading {
+      font-size: 24px; } }
 
 .box {
-  position: relative;
+  padding: 32px;
   width: 264px;
   height: 264px;
   background: #fff;
@@ -338,9 +354,6 @@ h1 {
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 24px; }
   .box__num {
-    position: absolute;
-    top: 32px;
-    left: 32px;
     border-radius: 23px;
     background: rgba(86, 204, 242, 0.1);
     padding: 2px 12px;
@@ -350,10 +363,8 @@ h1 {
     text-transform: uppercase;
     color: #56ccf2; }
   .box__text {
-    position: absolute;
+    margin: 24px 0 32px;
     width: 200px;
-    top: 80px;
-    left: 32px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 13px;
@@ -363,9 +374,6 @@ h1 {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 32px;
-    bottom: 32px;
     border-radius: 50%;
     border: none;
     background: #56ccf2;
@@ -381,19 +389,14 @@ h1 {
       -webkit-box-shadow: 2px 2px 5px rgba(0, 95, 179, 0.6);
               box-shadow: 2px 2px 5px rgba(0, 95, 179, 0.6); }
   .box__link {
-    position: absolute;
-    left: 88px;
-    bottom: 41px;
-    margin: 0;
+    display: inline-block;
+    margin: 0 0 0 14px;
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
     color: #334563; }
 
 .box-green .box__num {
-  position: absolute;
-  top: 32px;
-  left: 32px;
   border-radius: 23px;
   background: rgba(21, 216, 80, 0.1);
   padding: 2px 12px;
@@ -407,17 +410,11 @@ h1 {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  position: absolute;
-  left: 32px;
-  bottom: 32px;
   border-radius: 50%;
   border: none;
   background: #15D850; }
 
 .box-yellow .box__num {
-  position: absolute;
-  top: 32px;
-  left: 32px;
   border-radius: 23px;
   background: rgba(252, 201, 29, 0.1);
   padding: 2px 12px;
@@ -431,17 +428,11 @@ h1 {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  position: absolute;
-  left: 32px;
-  bottom: 32px;
   border-radius: 50%;
   border: none;
   background: #fcc91d; }
 
 .box-red .box__num {
-  position: absolute;
-  top: 32px;
-  left: 32px;
   border-radius: 23px;
   background: rgba(243, 99, 99, 0.1);
   padding: 2px 12px;
@@ -455,9 +446,6 @@ h1 {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  position: absolute;
-  left: 32px;
-  bottom: 32px;
   border-radius: 50%;
   border: none;
   background: #f36363; }
