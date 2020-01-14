@@ -569,16 +569,16 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .testimonials .person:nth-child(2) .person__left-ellipse {
+  .testimonials .person-feedback:nth-child(2) .person-feedback__left-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
-  .testimonials .person:nth-child(2) .person__right-ellipse {
+  .testimonials .person-feedback:nth-child(2) .person-feedback__right-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
-  .testimonials .person:last-child .person__left-ellipse {
+  .testimonials .person-feedback:last-child .person-feedback__left-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
-  .testimonials .person:last-child .person__right-ellipse {
+  .testimonials .person-feedback:last-child .person-feedback__right-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
 
@@ -586,7 +586,7 @@ h1 {
   .testimonials {
     padding: 148px 107px 168px; } }
 
-.person {
+.person-feedback {
   position: relative;
   width: 314px;
   height: 494px;
@@ -596,7 +596,7 @@ h1 {
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 24px;
   text-align: center; }
-  .person__left-ellipse {
+  .person-feedback__left-ellipse {
     position: absolute;
     width: 139px;
     height: 56px;
@@ -609,7 +609,7 @@ h1 {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
-  .person__img {
+  .person-feedback__img {
     position: relative;
     z-index: 1;
     width: 140px;
@@ -619,7 +619,7 @@ h1 {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
-  .person__right-ellipse {
+  .person-feedback__right-ellipse {
     position: absolute;
     right: 30px;
     top: 175px;
@@ -634,23 +634,23 @@ h1 {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
-  .person__quote {
+  .person-feedback__quote {
     display: block;
     margin: 80px auto 0; }
-  .person__text {
+  .person-feedback__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 150%;
     color: #6c788b; }
-  .person__name {
+  .person-feedback__name {
     margin-bottom: 4px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 150%;
     color: #253757; }
-  .person__work {
+  .person-feedback__work {
     margin-top: 0;
     font-weight: bold;
     font-size: 13px;
@@ -658,19 +658,19 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #c0cdd7; }
-  .person:hover .person__img {
+  .person-feedback:hover .person-feedback__img {
     border-radius: 20px;
     -webkit-transform: scale(1.15);
             transform: scale(1.15); }
-  .person:hover .person__left-ellipse {
+  .person-feedback:hover .person-feedback__left-ellipse {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg); }
-  .person:hover .person__right-ellipse {
+  .person-feedback:hover .person-feedback__right-ellipse {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg); }
 
 @media screen and (max-width: 1450px) {
-  .person {
+  .person-feedback {
     width: 304px;
     padding: 87px 22px 32px; } }
 
