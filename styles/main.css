@@ -228,11 +228,10 @@ h1 {
   color: #fff;
   border: none;
   cursor: pointer;
-  -webkit-transition: border 0.2s, background-color 0.4s;
-  transition: border 0.2s, background-color 0.4s; }
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s; }
   .button:hover {
-    background-color: #008aff;
-    border: 2px solid #ff9c8e; }
+    background-color: #ff7e6c; }
   .button:focus {
     outline: none;
     border: 1px solid white; }
@@ -468,7 +467,7 @@ h1 {
   max-width: 1900px;
   float: right;
   margin: -280px 0 148px 12%;
-  padding: 204px 0 0 13%;
+  padding: 204px 0 0 204px;
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
   display: -webkit-box;
@@ -547,7 +546,8 @@ h1 {
 .testimonials {
   padding: 148px 227px 168px;
   max-width: 1700px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  clear: both; }
   .testimonials__caption {
     margin: 0 0 16px;
     font-weight: bold;
@@ -569,16 +569,16 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .testimonials .person:nth-child(2) .person__img-before {
+  .testimonials .person:nth-child(2) .person__left-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
-  .testimonials .person:nth-child(2) .person__img-after {
+  .testimonials .person:nth-child(2) .person__right-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
-  .testimonials .person:last-child .person__img-before {
+  .testimonials .person:last-child .person__left-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
-  .testimonials .person:last-child .person__img-after {
+  .testimonials .person:last-child .person__right-ellipse {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
 
@@ -596,7 +596,7 @@ h1 {
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 24px;
   text-align: center; }
-  .person__img-before {
+  .person__left-ellipse {
     position: absolute;
     width: 139px;
     height: 56px;
@@ -619,7 +619,7 @@ h1 {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
-  .person__img-after {
+  .person__right-ellipse {
     position: absolute;
     right: 30px;
     top: 175px;
@@ -662,46 +662,42 @@ h1 {
     border-radius: 20px;
     -webkit-transform: scale(1.15);
             transform: scale(1.15); }
-  .person:hover .person__img-before {
+  .person:hover .person__left-ellipse {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg); }
-  .person:hover .person__img-after {
+  .person:hover .person__right-ellipse {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg); }
-  .person:focus {
-    outline: none;
-    -webkit-box-shadow: 2px 2px 5px rgba(0, 95, 179, 0.6);
-            box-shadow: 2px 2px 5px rgba(0, 95, 179, 0.6); }
 
 @media screen and (max-width: 1450px) {
   .person {
     width: 304px;
     padding: 87px 22px 32px; } }
 
-.apply {
+.vision {
   position: relative;
   padding: 200px 20px;
   background-color: #fff; }
-  .apply__wrapper {
+  .vision__wrapper {
     width: 40%;
     margin: 0 auto;
     text-align: center; }
-  .apply__title {
+  .vision__title {
     margin-bottom: 24px;
     font-weight: 600;
     font-size: 52px;
     line-height: 150%;
     color: #253757; }
-  .apply__text {
+  .vision__text {
     margin-bottom: 64px;
     font-family: "OpenSans", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
     color: #6c788b; }
-  .apply__button {
+  .vision__button {
     height: 56px; }
-  .apply .item-small {
+  .vision .item-small {
     position: absolute;
     width: 50px;
     height: 18px;
@@ -710,10 +706,10 @@ h1 {
     border-radius: 50px;
     border: 2px solid #FDE48B;
     background-color: transparent; }
-  .apply .item-small:nth-of-type(1) {
+  .vision .item-small:nth-of-type(1) {
     top: 11%;
     left: 30%; }
-  .apply .item-small:nth-of-type(2) {
+  .vision .item-small:nth-of-type(2) {
     position: absolute;
     width: 50px;
     height: 18px;
@@ -724,7 +720,7 @@ h1 {
     background-color: transparent;
     bottom: 25%;
     left: 32%; }
-  .apply .item-small:nth-of-type(3) {
+  .vision .item-small:nth-of-type(3) {
     position: absolute;
     width: 86px;
     height: 32px;
@@ -735,7 +731,7 @@ h1 {
     background-color: transparent;
     top: 45%;
     right: 5%; }
-  .apply .item-small:nth-of-type(4) {
+  .vision .item-small:nth-of-type(4) {
     position: absolute;
     width: 45px;
     height: 18px;
@@ -746,7 +742,7 @@ h1 {
     background-color: transparent;
     bottom: 15%;
     right: 35%; }
-  .apply .item-small:nth-of-type(5) {
+  .vision .item-small:nth-of-type(5) {
     position: absolute;
     width: 50px;
     height: 18px;
@@ -757,7 +753,7 @@ h1 {
     background-color: transparent;
     bottom: 35%;
     left: 5%; }
-  .apply .item-medium {
+  .vision .item-medium {
     position: absolute;
     width: 92px;
     height: 37px;
@@ -766,10 +762,10 @@ h1 {
     border-radius: 50px;
     border: 4px solid #F8ACAC;
     background-color: transparent; }
-  .apply .item-medium:nth-of-type(6) {
+  .vision .item-medium:nth-of-type(6) {
     top: 13%;
     left: 14%; }
-  .apply .item-medium:nth-of-type(7) {
+  .vision .item-medium:nth-of-type(7) {
     position: absolute;
     width: 92px;
     height: 37px;
@@ -780,7 +776,7 @@ h1 {
     background-color: transparent;
     bottom: 13%;
     left: 10%; }
-  .apply .item-medium:nth-of-type(8) {
+  .vision .item-medium:nth-of-type(8) {
     position: absolute;
     width: 54px;
     height: 21px;
@@ -791,10 +787,10 @@ h1 {
     background-color: transparent;
     top: 20%;
     right: 8%; }
-  .apply .item-medium:nth-of-type(9) {
+  .vision .item-medium:nth-of-type(9) {
     top: 60%;
     right: 20%; }
-  .apply .item-large {
+  .vision .item-large {
     position: absolute;
     width: 145px;
     height: 56px;
@@ -803,10 +799,10 @@ h1 {
     border-radius: 50px;
     border: 5px solid #87EBA5;
     background-color: transparent; }
-  .apply .item-large:nth-of-type(10) {
+  .vision .item-large:nth-of-type(10) {
     top: 25%;
     right: 15%; }
-  .apply .item-large:nth-of-type(11) {
+  .vision .item-large:nth-of-type(11) {
     position: absolute;
     width: 145px;
     height: 56px;
@@ -817,7 +813,7 @@ h1 {
     background-color: transparent;
     bottom: 25%;
     right: 10%; }
-  .apply .item-large:nth-of-type(12) {
+  .vision .item-large:nth-of-type(12) {
     top: 53%;
     left: 17%; }
 
