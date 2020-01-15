@@ -408,10 +408,10 @@ h1 {
       font-size: 17px;
       margin-bottom: 60px; } }
 
-.aboutus {
+.about-us {
   background-color: #fff;
   padding: 128px 17% 148px; }
-  .aboutus__heading {
+  .about-us__heading {
     max-width: 562px;
     height: 78px;
     margin: 0 auto 64px;
@@ -420,7 +420,7 @@ h1 {
     line-height: 150%;
     color: #253757;
     text-align: center; }
-  .aboutus__cards {
+  .about-us__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -431,28 +431,28 @@ h1 {
     margin: 0 auto; }
 
 @media screen and (max-width: 1280px) {
-  .aboutus {
+  .about-us {
     padding: 118px 10% 128px; } }
 
 @media screen and (max-width: 1023px) {
-  .aboutus__cards {
+  .about-us__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .aboutus .aboutus__card:last-child {
+  .about-us .about-us__card:last-child {
     margin-top: 70px; }
-  .aboutus .aboutus__card:first-child {
+  .about-us .about-us__card:first-child {
     margin-right: 50px; } }
 
 @media screen and (max-width: 740px) {
-  .aboutus {
+  .about-us {
     padding: 50px 10%; }
-    .aboutus__heading {
+    .about-us__heading {
       font-size: 32px;
       margin-bottom: 30px; }
-    .aboutus__cards {
+    .about-us__cards {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -460,9 +460,9 @@ h1 {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .aboutus .aboutus__card:last-child {
+    .about-us .about-us__card:last-child {
       margin-top: 60px; }
-    .aboutus .aboutus__card:first-child {
+    .about-us .about-us__card:first-child {
       margin-right: 0;
       margin-bottom: 60px; } }
 
