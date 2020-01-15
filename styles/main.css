@@ -257,6 +257,20 @@ h1 {
     font-size: 24px;
     line-height: 150%; }
 
+@media screen and (max-width: 768px) {
+  .welcome {
+    width: 70%; } }
+
+@media screen and (max-width: 505px) {
+  .welcome {
+    width: 85%; }
+    .welcome__heading {
+      font-size: 24px;
+      margin-top: 60px; }
+    .welcome__description {
+      font-size: 17px;
+      margin-bottom: 60px; } }
+
 .aboutus {
   background-color: #fff;
   padding: 128px 17% 148px; }
@@ -283,6 +297,38 @@ h1 {
   .aboutus {
     padding: 118px 10% 128px; } }
 
+@media screen and (max-width: 1023px) {
+  .aboutus__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .aboutus .aboutus__card:last-child {
+    margin-top: 70px; }
+  .aboutus .aboutus__card:first-child {
+    margin-right: 50px; } }
+
+@media screen and (max-width: 740px) {
+  .aboutus {
+    padding: 50px 10%; }
+    .aboutus__heading {
+      font-size: 32px;
+      margin-bottom: 30px; }
+    .aboutus__cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .aboutus .aboutus__card:last-child {
+      margin-top: 60px; }
+    .aboutus .aboutus__card:first-child {
+      margin-right: 0;
+      margin-bottom: 60px; } }
+
 .card {
   width: 264px;
   text-align: center; }
@@ -307,6 +353,11 @@ h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 150%; }
+
+@media screen and (max-width: 1023px) {
+  .card__img {
+    width: 200px;
+    height: 200px; } }
 
 .services {
   display: -webkit-box;
@@ -357,10 +408,44 @@ h1 {
   .services {
     padding: 0 10%; }
     .services__description {
-      max-width: 280px;
+      max-width: 290px;
       margin-right: 40px; }
     .services__heading {
       font-size: 24px; } }
+
+@media screen and (max-width: 999px) {
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .services__cards {
+      margin-top: 48px;
+      align-self: center;
+      grid-template-areas: "blue yellow"  "green red"; }
+    .services__description {
+      max-width: 390px;
+      margin-top: 100px; }
+    .services__heading {
+      font-size: 32px; } }
+
+@media screen and (max-width: 599px) {
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px; }
+    .services__cards {
+      margin-top: 48px;
+      align-self: center;
+      grid-template-areas: "blue" "yellow" "green" "red"; }
+    .services__description {
+      max-width: 390px;
+      margin-top: 50px; }
+    .services__heading {
+      width: 250px;
+      font-size: 28px; } }
 
 .box {
   padding: 32px;
@@ -541,11 +626,77 @@ h1 {
 
 @media (max-width: 1480px) {
   .work {
-    padding: 144px 0 0 104px; }
-    .work__img {
-      width: 587px; }
+    width: 90%;
+    padding: 12% 0 0 8%; }
+    .work__wrapper {
+      row-gap: 20px; }
     .work__description {
-      margin-right: 100px; } }
+      width: 30%;
+      margin-right: 10%; }
+    .work__img {
+      width: 50%;
+      height: 60%; } }
+
+@media (max-width: 1250px) {
+  .work {
+    margin-bottom: 98px; }
+    .work__heading {
+      font-size: 22px; } }
+
+@media (max-width: 970px) {
+  .work {
+    padding-top: 8%;
+    margin-top: -100px;
+    width: 95%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px; }
+    .work__icon {
+      width: 45px;
+      height: 45px;
+      padding-top: 20%; }
+    .work__description {
+      padding-bottom: 5%; }
+    .work__img {
+      width: 45%;
+      height: 50%; }
+    .work__heading {
+      width: 400px; } }
+
+@media (max-width: 725px) {
+  .work {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    margin: 0 0 55px;
+    padding: 10%;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px; }
+    .work__icon {
+      width: 32px;
+      height: 32px;
+      padding-top: 4px; }
+      .work__icon:hover {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 70% 0 0 10%; }
+    .work__description {
+      padding: 0; }
+    .work__wrapper {
+      -webkit-column-gap: 10px;
+         -moz-column-gap: 10px;
+              column-gap: 10px; }
+    .work__img {
+      display: none; }
+    .work__heading {
+      width: 300px; }
+    .work__text {
+      font-size: 12px; } }
+
+@media (max-width: 350px) {
+  .work {
+    padding: 50px 0 0 4%; } }
 
 .testimonials {
   padding: 148px 227px 168px;
@@ -590,12 +741,19 @@ h1 {
   .testimonials {
     padding: 128px 5% 138px; } }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1150px) {
   .testimonials {
-    padding: 98px 5% 108px; }
+    padding: 8px 5% 88px; }
     .testimonials__people {
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media screen and (max-width: 420px) {
+  .testimonials__heading {
+    margin: 0 0 30px; } }
 
 .person-feedback {
   position: relative;
@@ -680,14 +838,23 @@ h1 {
     -webkit-transform: rotate(-50deg);
             transform: rotate(-50deg); }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1150px) {
   .person-feedback {
-    width: 304px;
-    padding: 87px 22px 32px; } }
+    margin: 20px 15px 25px; } }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 415px) {
   .person-feedback {
-    width: 270px; } }
+    padding-top: 70px;
+    padding-bottom: 0;
+    height: 444px; }
+    .person-feedback__quote {
+      margin: 40px auto 0; }
+    .person-feedback__left-ellipse {
+      left: 9%;
+      top: 16%; }
+    .person-feedback__right-ellipse {
+      right: 7%;
+      top: 33%; } }
 
 .vision {
   position: relative;
@@ -910,7 +1077,7 @@ h1 {
 
 @media screen and (max-width: 665px) {
   .vision {
-    padding: 60px 18%; }
+    padding: 90px 18%; }
     .vision__wrapper {
       width: 100%; }
     .vision__title {
