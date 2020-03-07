@@ -663,7 +663,16 @@ h1 {
   background: #fff;
   -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-  border-radius: 24px; }
+  border-radius: 24px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s; }
+  .box:hover {
+    -webkit-box-shadow: 0 9px 16px rgba(37, 41, 49, 0.2);
+            box-shadow: 0 9px 16px rgba(37, 41, 49, 0.2);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
   .box__num {
     border-radius: 23px;
     background: rgba(86, 204, 242, 0.1);
@@ -702,6 +711,7 @@ h1 {
               box-shadow: 2px 2px 5px rgba(0, 95, 179, 0.6); }
   .box__link {
     display: inline-block;
+    cursor: pointer;
     margin: 0 0 0 14px;
     font-weight: 600;
     font-size: 15px;
@@ -906,7 +916,7 @@ h1 {
       width: 350px; } }
 
 .testimonials {
-  padding: 148px 227px 168px;
+  padding: 0 227px 168px;
   max-width: 1700px;
   margin: 0 auto;
   clear: both; }
@@ -946,7 +956,7 @@ h1 {
 
 @media screen and (max-width: 1450px) {
   .testimonials {
-    padding: 128px 5% 138px; } }
+    padding: 0 5% 138px; } }
 
 @media screen and (max-width: 1150px) {
   .testimonials {
@@ -984,8 +994,8 @@ h1 {
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 24px;
   text-align: center;
-  -webkit-transition: border-radius 0.2s;
-  transition: border-radius 0.2s; }
+  -webkit-transition: border-radius 0.4s;
+  transition: border-radius 0.4s; }
   .person-feedback__left-ellipse {
     position: absolute;
     width: 139px;
@@ -995,10 +1005,10 @@ h1 {
     border-radius: 500px;
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
   .person-feedback__img {
     position: relative;
     z-index: 1;
@@ -1020,10 +1030,10 @@ h1 {
     border-radius: 500px;
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
   .person-feedback__quote {
     display: block;
     margin: 80px auto 0; }
@@ -1103,6 +1113,7 @@ h1 {
     position: relative;
     z-index: 1; }
   .vision__button {
+    cursor: pointer;
     height: 56px;
     position: relative;
     z-index: 1; }
@@ -1484,10 +1495,12 @@ h1 {
     line-height: 150%;
     letter-spacing: 3px;
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
     .footer__link:hover {
-      outline: none;
-      text-shadow: 2px 2px #005fb3; }
+      opacity: 0.8; }
     .footer__link:focus {
       outline: none; }
     .footer__link:focus::after, .footer__link:active::after {
