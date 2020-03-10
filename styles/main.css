@@ -1565,6 +1565,16 @@ h1 {
   .footer__contacts {
     margin-bottom: 30px; } }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #008aff inset;
+  -webkit-text-fill-color: #fff; }
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #008aff inset;
+          box-shadow: 0 0 0 50px #008aff inset;
+  -webkit-text-fill-color: #fff;
+  font-weight: 500; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
